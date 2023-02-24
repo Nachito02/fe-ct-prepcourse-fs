@@ -41,6 +41,8 @@ function deleteAbc(string) {
    // Tu tarea es eliminar las letras "a", "b" y "c" del string recibido.
    // Retorna el string sin estas letras.
    // Tu código:
+
+
 }
 
 function sortArray(arrayOfStrings) {
@@ -49,6 +51,12 @@ function sortArray(arrayOfStrings) {
    // de la longitud de cada string.
    // [EJEMPLO]: ["You", "are", "beautiful", "looking"]  ---> [“You", "are", "looking", "beautiful"]
    // Tu código:
+
+
+   [ "You", "are",  "beautiful",  ,"looking"] 
+
+      return arrayOfStrings.sort( (a,b) => (a.length - b.length) )
+
 }
 
 function buscoInterseccion(array1, array2) {
@@ -58,6 +66,14 @@ function buscoInterseccion(array1, array2) {
    // Si no tienen elementos en común, retornar un arreglo vacío.
    // [PISTA]: los arreglos no necesariamente tienen la misma longitud.
    // Tu código:
+
+
+            
+
+         return array1.filter( element => (
+                array2.includes(element)
+         ) )
+
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
